@@ -1,0 +1,26 @@
+[
+    {
+        "sobject": "Account",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "Accounts.json"
+        ]
+    },
+    {
+        "sobject": "Astonous_SM__Shipping_Credential__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "Credentials.json"
+        ]
+    },
+    {
+        "sobject": "Astonous_SM__Shipping_Preference__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "ShippingPreference.json"
+        ]
+    }
+]

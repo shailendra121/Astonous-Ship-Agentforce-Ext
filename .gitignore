@@ -1,2 +1,15 @@
 .sf/config.json
 .sfdx
+.DS_Store
+.sfdx/
+.sfdx/tools/254/apex.db
+.sfdx
+.DS_Store
+.project
+.salesforce
+.settings
+.idea
+.history
+.sf/
+.sfdx/
+.sfdx/tools/254/apex.db

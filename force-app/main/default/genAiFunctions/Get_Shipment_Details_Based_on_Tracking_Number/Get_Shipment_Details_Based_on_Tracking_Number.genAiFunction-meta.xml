@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provide the shipment tracking number that you get from user and this will return the shipment carrier and status of the shipment</description>
+    <invocationTarget>Get_Shipment_Details_Based_on_Tracking_Number</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get Shipment Details - Based on Tracking Number</masterLabel>
+    <progressIndicatorMessage>Getting shipment details</progressIndicatorMessage>
+</GenAiFunction>

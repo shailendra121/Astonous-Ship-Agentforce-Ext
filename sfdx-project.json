@@ -2,7 +2,11 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "default": true,
+      "versionName": "Summer 25",
+      "versionDescription": "Asotnous Ship Agentforce EXT",
+      "versionNumber": "1.0.0.NEXT",
+      "definitionFile": "config/project-scratch-def.json"
     }
   ],
   "name": "Asotnous Ship Agentforce EXT",

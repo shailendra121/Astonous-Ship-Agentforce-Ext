@@ -1,16 +1,23 @@
 {
   "packageDirectories": [
     {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "dependencies": [
+        {
+          "subscriberPackageVersionId": "04tKe000000sybh"
+        }
+      ],
       "path": "force-app",
-      "default": true,
-      "versionName": "Summer 25",
-      "versionDescription": "Asotnous Ship Agentforce EXT",
-      "versionNumber": "1.0.0.NEXT",
-      "definitionFile": "config/project-scratch-def.json"
+      "package": "Astonous Ship Agentforce EXT",
+      "versionDescription": ""
     }
   ],
   "name": "Asotnous Ship Agentforce EXT",
   "namespace": "asagent",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "64.0"
+  "sourceApiVersion": "64.0",
+  "packageAliases": {
+    "Astonous Ship Agentforce EXT": "0HoUM0000000E6D0AU"
+  }
 }

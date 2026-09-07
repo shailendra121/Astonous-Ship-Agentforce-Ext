@@ -1,11 +1,11 @@
-public with sharing class RatesAgentManager {
+global with sharing class RatesAgentManager {
 
     @InvocableMethod(
         label='Get Shipping Rates'
         callout=true
         description='Fetches available shipping carrier rates for a recipient record and package weight.'
     )
-    public static List<RatingRequestResult> getShippingRates(
+    global static List<RatingRequestResult> getShippingRates(
         List<RatingRequestInput> inputs
     ) {
         List<RatingRequestResult> results = new List<RatingRequestResult>();
@@ -83,23 +83,23 @@ public with sharing class RatesAgentManager {
         return results;
     }
 
-    public class RatingRequestInput {
+    global class RatingRequestInput {
         @InvocableVariable(
             label='Recipient Record ID'
             description='Record used by the Astonous Shipping Manager package to initialize the rating request.'
             required=true
         )
-        public String recipientRecordId;
+        global String recipientRecordId;
 
         @InvocableVariable(label='Weight' description='Package weight as a number, e.g. 2.5' required=true)
-        public String weight;
+        global String weight;
     }
 
-    public class RatingRequestResult {
+    global class RatingRequestResult {
         @InvocableVariable(label='Shipping Rates' description='List of available shipping rate quotes.')
-        public List<String> rates;
+        global List<String> rates;
 
         @InvocableVariable(label='Error Message' description='Populated if the rate lookup failed for this input.')
-        public String errorMessage;
+        global String errorMessage;
     }
 }

@@ -24,24 +24,24 @@
         <sortOrder>1</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Once all three values are known, call the Get Shipping Rates action exactly once.</description>
+        <description>Once all two values are known, call the Get Shipping Rates action exactly once.</description>
         <developerName>instructions_0_1788252160333</developerName>
         <language>en_US</language>
         <masterLabel>instructions_0_1788252160333</masterLabel>
         <sortOrder>2</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Determine how to present the results based on what the user asked for:
-If the user asked for the fastest rate: from the returned entries, find the one with the earliest DeliveryDate. Respond with only that entry (Carrier, ServiceType, Amount, DeliveryDate). Do not list the others.
-If the user asked for the cheapest rate: from the returned entries, find the one with the lowest Amount. Respond with only that entry (Carrier, ServiceType, Amount, DeliveryDate). Do not list the others.
-If the user did not specify fastest or cheapest: return all entries returned by the action.</description>
+        <description>Determine which entries to show based on what the user asked for:
+If the user asked for the fastest rate: from the returned entries, find the one with the earliest DeliveryDate. Show only that single entry.
+If the user asked for the cheapest rate: from the returned entries, find the one with the lowest Amount. Show only that single entry.
+If the user did not specify fastest or cheapest: show all returned entries.</description>
         <developerName>instructions_0_1788253269287</developerName>
         <language>en_US</language>
         <masterLabel>instructions_0_1788253269287</masterLabel>
         <sortOrder>3</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>return the relavant rates in conversation like all rates if nothing determine , 0nly fastest if determined.</description>
+        <description>CRITICAL FORMATTING RULE: You MUST render the results as an HTML table. Do not use labeled entries like &quot;Entry 1&quot;, do not use bullet points, do not use plain text. The only acceptable output format is an HTML table with four columns: Carrier, Service Type, Amount, and Delivery Date. Each rate occupies one row. Example structure: a header row with Carrier, Service Type, Amount, Delivery Date followed by one data row per entry.</description>
         <developerName>instructions_0_1788263385442</developerName>
         <language>en_US</language>
         <masterLabel>instructions_0_1788263385442</masterLabel>

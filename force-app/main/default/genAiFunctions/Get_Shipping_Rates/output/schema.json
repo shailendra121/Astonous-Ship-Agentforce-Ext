@@ -15,11 +15,11 @@
       "description" : "List of available shipping rate quotes.",
       "maxItems" : 2000,
       "items" : {
-        "lightning:type" : "lightning__richTextType"
+        "lightning:type" : "lightning__textType"
       },
       "lightning:type" : "lightning__listType",
       "lightning:isPII" : false,
-      "copilotAction:isDisplayable" : true,
+      "copilotAction:isDisplayable" : false,
       "copilotAction:isUsedByPlanner" : true,
       "copilotAction:useHydratedPrompt" : false
     }

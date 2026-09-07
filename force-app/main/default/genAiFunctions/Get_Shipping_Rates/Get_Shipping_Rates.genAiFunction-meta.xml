@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Fetches available shipping carrier rates for a recipient record and package weight.</description>
+    <developerName>Get_Shipping_Rates</developerName>
+    <invocationTarget>RatesAgentManager</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Get_Shipping_Rates</localDeveloperName>
+    <masterLabel>Get Shipping Rates</masterLabel>
+    <progressIndicatorMessage>Fetching Shipping Rates</progressIndicatorMessage>
+</GenAiFunction>

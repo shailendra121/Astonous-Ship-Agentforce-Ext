@@ -2,6 +2,7 @@ public with sharing class RatesAgentManager {
 
     @InvocableMethod(
         label='Get Shipping Rates'
+        callout=true
         description='Fetches available shipping carrier rates for a recipient record and package weight.'
     )
     public static List<RatingRequestResult> getShippingRates(

@@ -465,7 +465,7 @@
                 <sortOrder>1</sortOrder>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
-                <description>Once all three values are known, call the Get Shipping Rates action exactly once.</description>
+                <description>Once all values are known, call the Get Shipping Rates action exactly once.</description>
                 <developerName>instructions_0_1788252160333</developerName>
                 <language xsi:nil="true"/>
                 <masterLabel>instructions_0_1788252160333</masterLabel>

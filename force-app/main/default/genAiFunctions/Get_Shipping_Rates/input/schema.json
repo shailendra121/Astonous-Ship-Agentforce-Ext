@@ -1,0 +1,20 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ratingRequest" : {
+      "title" : "Rating Request JSON",
+      "description" : "JSON representing the rating request which contains information to create a shipment, including sender, recipient, package details, and other optional information. You can provide either a Salesforce Record ID or a Rating Request JSON.",
+      "lightning:type" : "@apexClassType/Astonous_SM__RatingRequest",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "recordId" : {
+      "title" : "Salesforce Record ID",
+      "description" : "Salesforce Record ID of the record from which you want to create a shipping label. The system will automatically populate the Shipping Wizard based on the mapping configured in Custom Metadata.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

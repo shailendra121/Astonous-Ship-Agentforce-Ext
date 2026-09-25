@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Provides shipping rates and available shipping options based on the user&apos;s shipping request.</description>
+    <developerName>Shipping_Rates_Agent</developerName>
+    <genAiFunctions>
+        <functionName>Get_Shipping_Rates</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>By default, return all available shipping options sorted by Total Charge, from lowest to highest.</description>
+        <developerName>instructions_0_1790315005220</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_0_1790315005220</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Display each option using exactly this format in  Numbered list and Bold Service Type:
+[Service Type]
+Total Charge: $[amount]
+Expected Delivery: [date]
+Total Weight: [weight] [unit]</description>
+        <developerName>instructions_1_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_1_1790315005226</masterLabel>
+        <sortOrder>1</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Include all available rates unless the user asks for a specific option or filter. Do not omit duplicate Service Types when they have different charges or Expected Delivery dates.</description>
+        <developerName>instructions_2_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_2_1790315005226</masterLabel>
+        <sortOrder>2</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the user asks for a specific preference:
+Cheapest: Select the shipping option with the lowest Total Charge.
+Fastest: Select the shipping option with the earliest Expected Delivery.
+Specific service type: Return only the shipping option(s) matching the requested Service Type.</description>
+        <developerName>instructions_3_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_3_1790315005226</masterLabel>
+        <sortOrder>3</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If no shipping rates are available, respond as the status :
+if status : OK then &quot;No shipping options are currently available.&quot; and
+if status : ERROR or INPUT_NEEDED then return the summary message.</description>
+        <developerName>instructions_4_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_4_1790315005226</masterLabel>
+        <sortOrder>4</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>Shipping_Rates_Agent</localDeveloperName>
+    <masterLabel>Shipping Rates Agent</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Use this subagent to retrieve shipping rates for the current Salesforce record when the user asks for shipping rates, shipping options, shipping costs, cheapest shipping, fastest shipping, or a specific service type.</scope>
+</GenAiPlugin>

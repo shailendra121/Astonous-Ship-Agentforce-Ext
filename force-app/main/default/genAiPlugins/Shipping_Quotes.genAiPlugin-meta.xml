@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Provides shipping quotes, including rates and available shipping options, based on the user&apos;s shipping request.</description>
+    <developerName>Shipping_Quotes</developerName>
+    <genAiFunctions>
+        <functionName>Get_Shipping_Rates</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Record_Id</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user asks for Shipping Rates using an Account Name or Record Name, first search for the record by name and retrieve its Id, then call the get_shipping_rates Action using that Id. If multiple records match the provided name, do not select one automatically; ask the user to select from available Records by providing options. If no matching record is found, ask the user for a valid Account/Record name or Id</description>
+        <developerName>instructions_0_1790315005220</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_0_1790315005220</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If no shipping rates are available, respond as the status :
+if status : OK then &quot;No shipping options are currently available.&quot; and
+if status : ERROR or INPUT_NEEDED then return the summary message.</description>
+        <developerName>instructions_0_1790595468892</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_0_1790595468892</masterLabel>
+        <sortOrder>1</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>By default, return all available shipping options sorted by Total Charge from lowest to highest. If the user specifies a preference, sort the shipping options accordingly—for example, fastest delivery by Expected Delivery Date (earliest first), most expensive by Total Charge (highest first), cheapest by Total Charge (lowest first), or by a specific Service Type or other attribute requested by the user.</description>
+        <developerName>instructions_1_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_1_1790315005226</masterLabel>
+        <sortOrder>2</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never reveal carrier account numbers or credentials.</description>
+        <developerName>instructions_1_1790595468898</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_1_1790595468898</masterLabel>
+        <sortOrder>3</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Display each option using exactly this format in  Numbered list and Bold Service Type:
+[Service Type]
+Total Charge: $[amount]
+Expected Delivery: [date]
+Total Weight: [weight] [unit]</description>
+        <developerName>instructions_2_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_2_1790315005226</masterLabel>
+        <sortOrder>4</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Include all available rates unless the user asks for a specific option or filter. Do not omit duplicate Service Types when they have different charges or Expected Delivery dates.</description>
+        <developerName>instructions_3_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_3_1790315005226</masterLabel>
+        <sortOrder>5</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the user asks for a specific preference:
+Cheapest: Select the shipping option with the lowest Total Charge.
+Fastest: Select the shipping option with the earliest Expected Delivery.
+Specific service type: Return only the shipping option(s) matching the requested Service Type.</description>
+        <developerName>instructions_4_1790315005226</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_4_1790315005226</masterLabel>
+        <sortOrder>6</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>Shipping_Quotes</localDeveloperName>
+    <masterLabel>Shipping Quotes</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Use this topic to retrieve shipping quotes for the current Salesforce record or Name when the user asks for shipping quotes, shipping rates, shipping options, shipping costs, cheapest shipping, fastest shipping, or a specific service type.</scope>
+</GenAiPlugin>

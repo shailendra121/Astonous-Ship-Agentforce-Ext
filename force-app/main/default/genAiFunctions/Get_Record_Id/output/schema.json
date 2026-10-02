@@ -1,0 +1,24 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "recordId" : {
+      "title" : "Record Id",
+      "description" : "The 15/18-character Salesforce Id of the matching record, returned as text. Empty if no record was found, the inputs were invalid, or an error occurred. Pass this value to other actions that require a record Id.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "summaryMessage" : {
+      "title" : "Summary Message",
+      "description" : "A short human-readable status of the lookup: whether a record was found, not found, the input was invalid, or an error occurred. Use this to explain the outcome to the user when Record Id is empty.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

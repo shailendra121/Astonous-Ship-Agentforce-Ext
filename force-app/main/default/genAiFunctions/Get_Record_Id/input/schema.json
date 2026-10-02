@@ -1,0 +1,21 @@
+{
+  "required" : [ "objectApiName", "recordName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "objectApiName" : {
+      "title" : "Object API Name",
+      "description" : "The API name of the Salesforce object to search, e.g. Account, Contact, Opportunity, or a custom object like Shipment__c. Use the exact API name, not the plural or display label.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "recordName" : {
+      "title" : "Record Name",
+      "description" : "The value of the record's Name field to search for, e.g. Acme Corporation. Must be an exact match. Do not include the object type or extra words.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Finds the Salesforce record Id for a record when you know its object API name and its exact Name (e.g. find the Id of the Account named &quot;Acme Corporation&quot;). Use this whenever a record Id is needed but the user has only provided a record name. Returns the first match only; returns an empty Id with an explanatory message if nothing is found.</description>
+    <developerName>Get_Record_Id</developerName>
+    <invocationTarget>GetRecordIdAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Get_Record_Id</localDeveloperName>
+    <masterLabel>Get Record Id</masterLabel>
+    <progressIndicatorMessage>retrieving record</progressIndicatorMessage>
+</GenAiFunction>

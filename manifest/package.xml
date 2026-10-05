@@ -15,5 +15,5 @@
         <members>Get_Shipment_Details_Based_on_Tracking_Number</members>
         <name>GenAiFunction</name>
     </types>
-    <version>64.0</version>
+    <version>67.0</version>
 </Package>

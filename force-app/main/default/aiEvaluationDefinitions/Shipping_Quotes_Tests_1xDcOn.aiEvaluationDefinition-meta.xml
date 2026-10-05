@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AiEvaluationDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Shipping_Quotes_Tests</name>
+    <subjectName>Copilot_for_Salesforce</subjectName>
+    <subjectType>AGENT</subjectType>
+    <subjectVersion>v1</subjectVersion>
+    <testCase>
+        <expectation>
+            <expectedValue>[&apos;Get_Shipping_Rates&apos;]</expectedValue>
+            <name>action_sequence_match</name>
+        </expectation>
+        <expectation>
+            <expectedValue>get the shipping option List with serviceType, Total Charge, Expected Delivery and weight.</expectedValue>
+            <name>bot_response_rating</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Shipping_Quotes</expectedValue>
+            <name>topic_sequence_match</name>
+        </expectation>
+        <inputs>
+            <utterance>what will be Shipping cost for 001cb00001JhSgxAAF</utterance>
+        </inputs>
+        <number>1</number>
+    </testCase>
+    <testCase>
+        <expectation>
+            <expectedValue>[&apos;Get_Record_Id&apos;, &apos;Get_Shipping_Rates&apos;]</expectedValue>
+            <name>action_sequence_match</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Finds the Mosner &amp; Associates account record and returns the shipping option list with service type, total charge, expected delivery and weight.</expectedValue>
+            <name>bot_response_rating</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Shipping_Quotes</expectedValue>
+            <name>topic_sequence_match</name>
+        </expectation>
+        <inputs>
+            <utterance>What will be the shipping options for Account Name Mosner &amp; Associates</utterance>
+        </inputs>
+        <number>2</number>
+    </testCase>
+    <testCase>
+        <expectation>
+            <expectedValue>[&apos;Get_Record_Id&apos;, &apos;Get_Shipping_Rates&apos;]</expectedValue>
+            <name>action_sequence_match</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Get Shipping Rates returns status ERROR. The agent passes on the ERROR summary from the carrier and does not make up or estimate any rates.</expectedValue>
+            <name>bot_response_rating</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Shipping_Quotes</expectedValue>
+            <name>topic_sequence_match</name>
+        </expectation>
+        <inputs>
+            <utterance>What will be the shipping cost for Account Name Bhaumik Productions</utterance>
+        </inputs>
+        <number>3</number>
+    </testCase>
+    <testCase>
+        <expectation>
+            <expectedValue>[&apos;Get_Record_Id&apos;, &apos;Get_Shipping_Rates&apos;]</expectedValue>
+            <name>action_sequence_match</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Returns the option with the lowest total charge (tagged cheapest), with service type, total charge, expected delivery and weight.</expectedValue>
+            <name>bot_response_rating</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Shipping_Quotes</expectedValue>
+            <name>topic_sequence_match</name>
+        </expectation>
+        <inputs>
+            <utterance>What is the cheapest shipping option for Account Name Mosner &amp; Associates</utterance>
+        </inputs>
+        <number>4</number>
+    </testCase>
+    <testCase>
+        <expectation>
+            <expectedValue>[&apos;Get_Record_Id&apos;]</expectedValue>
+            <name>action_sequence_match</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Two records match Catering. The agent lists the matches (name and city) and asks which one the user means. Get Shipping Rates is not called until the user picks one.</expectedValue>
+            <name>bot_response_rating</name>
+        </expectation>
+        <expectation>
+            <expectedValue>Shipping_Quotes</expectedValue>
+            <name>topic_sequence_match</name>
+        </expectation>
+        <inputs>
+            <utterance>What will be the shipping cost for Account VIP Catering</utterance>
+        </inputs>
+        <number>5</number>
+    </testCase>
+</AiEvaluationDefinition>

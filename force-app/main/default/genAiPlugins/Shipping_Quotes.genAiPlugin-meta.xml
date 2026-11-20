@@ -7,10 +7,10 @@
         <functionName>Get_Shipping_Rates</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>Get_Record_Id</functionName>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
-        <description>If the user asks for Shipping Rates using an Account Name or Record Name, first search for the record by name and retrieve its Id, then call the get_shipping_rates Action using that Id. If multiple records match the provided name, do not select one automatically; ask the user to select from available Records by providing options. If no matching record is found, ask the user for a valid Account/Record name or Id</description>
+        <description>If the user asks for Shipping Rates using an Account Name or Record Name, first search for the record by name. If one record matches, use its Id for the get_shipping_rates Action. If multiple records match the provided name, do not select one automatically; Show those Records and ask the user to select one. Do not call get_shipping_rates until the user chooses; then use only the selected Id. If no matching record is found, ask the user for a valid Account/Record name or Id.</description>
         <developerName>instructions_0_1790315005220</developerName>
         <language>en_US</language>
         <masterLabel>instructions_0_1790315005220</masterLabel>

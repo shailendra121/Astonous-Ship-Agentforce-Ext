@@ -3,7 +3,7 @@
   "properties" : {
     "ratingRequest" : {
       "title" : "Rating Request JSON",
-      "description" : "JSON representing the rating request which contains information to create a shipment, including sender, recipient, package details, and other optional information. You can provide either a Salesforce Record ID or a Rating Request JSON.",
+      "description" : "JSON representing the rating request which contains information to create a shipment, including sender, recipient, package details, and other optional information. Use this when record Id is not provided.",
       "lightning:type" : "@apexClassType/Astonous_SM__RatingRequest",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : false

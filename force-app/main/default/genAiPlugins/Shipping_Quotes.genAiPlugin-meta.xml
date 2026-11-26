@@ -11,32 +11,32 @@
     </genAiFunctions>
     <genAiPluginInstructions>
         <description>If the user asks for Shipping Rates using an Account Name or Record Name, first search for the record by name. If one record matches, use its Id for the get_shipping_rates Action. If multiple records match the provided name, do not select one automatically; Show those Records and ask the user to select one. Do not call get_shipping_rates until the user chooses; then use only the selected Id. If no matching record is found, ask the user for a valid Account/Record name or Id.</description>
-        <developerName>instructions_0_1790315005220</developerName>
+        <developerName>instructions_0</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_0_1790315005220</masterLabel>
+        <masterLabel>instructions_0</masterLabel>
         <sortOrder>0</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>If no shipping rates are available, respond as the status :
 if status : OK then &quot;No shipping options are currently available.&quot; and
 if status : ERROR or INPUT_NEEDED then return the summary message.</description>
-        <developerName>instructions_0_1790595468892</developerName>
+        <developerName>instructions_1</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_0_1790595468892</masterLabel>
+        <masterLabel>instructions_1</masterLabel>
         <sortOrder>1</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>By default, return all available shipping options sorted by Total Charge from lowest to highest. If the user specifies a preference, sort the shipping options accordingly—for example, fastest delivery by Expected Delivery Date (earliest first), most expensive by Total Charge (highest first), cheapest by Total Charge (lowest first), or by a specific Service Type or other attribute requested by the user.</description>
-        <developerName>instructions_1_1790315005226</developerName>
+        <developerName>instructions_2</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_1_1790315005226</masterLabel>
+        <masterLabel>instructions_2</masterLabel>
         <sortOrder>2</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>Never reveal carrier account numbers or credentials.</description>
-        <developerName>instructions_1_1790595468898</developerName>
+        <developerName>instructions_3</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_1_1790595468898</masterLabel>
+        <masterLabel>instructions_3</masterLabel>
         <sortOrder>3</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
@@ -45,16 +45,16 @@ if status : ERROR or INPUT_NEEDED then return the summary message.</description>
 Total Charge: $[amount]
 Expected Delivery: [date]
 Total Weight: [weight] [unit]</description>
-        <developerName>instructions_2_1790315005226</developerName>
+        <developerName>instructions_4</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_2_1790315005226</masterLabel>
+        <masterLabel>instructions_4</masterLabel>
         <sortOrder>4</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>Include all available rates unless the user asks for a specific option or filter. Do not omit duplicate Service Types when they have different charges or Expected Delivery dates.</description>
-        <developerName>instructions_3_1790315005226</developerName>
+        <developerName>instructions_5</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_3_1790315005226</masterLabel>
+        <masterLabel>instructions_5</masterLabel>
         <sortOrder>5</sortOrder>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
@@ -62,9 +62,9 @@ Total Weight: [weight] [unit]</description>
 Cheapest: Select the shipping option with the lowest Total Charge.
 Fastest: Select the shipping option with the earliest Expected Delivery.
 Specific service type: Return only the shipping option(s) matching the requested Service Type.</description>
-        <developerName>instructions_4_1790315005226</developerName>
+        <developerName>instructions_6</developerName>
         <language>en_US</language>
-        <masterLabel>instructions_4_1790315005226</masterLabel>
+        <masterLabel>instructions_6</masterLabel>
         <sortOrder>6</sortOrder>
     </genAiPluginInstructions>
     <language>en_US</language>

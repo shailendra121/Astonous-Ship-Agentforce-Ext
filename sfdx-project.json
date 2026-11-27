@@ -16,7 +16,7 @@
   "name": "Asotnous Ship Agentforce EXT",
   "namespace": "asagent",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "64.0",
+  "sourceApiVersion": "67.0",
   "packageAliases": {
     "Astonous Ship Agentforce EXT": "0HoUM0000000E6D0AU",
     "Astonous Ship Agentforce EXT@0.1.0-1": "04tUM0000008eWXYAY",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Fetches available shipping carrier rates for a recipient record.</description>
+    <description>Fetches available shipping options for a Salesforce record.</description>
     <developerName>Get_Shipping_Rates</developerName>
     <invocationTarget>Astonous_SM__GetShippingRatesAction</invocationTarget>
     <invocationTargetType>apex</invocationTargetType>

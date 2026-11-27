@@ -42,7 +42,7 @@ if status : ERROR or INPUT_NEEDED then return the summary message.</description>
     <genAiPluginInstructions>
         <description>Display each option using exactly this format in  Numbered list and Bold Service Type:
 [Service Type]
-Total Charge: $[amount]
+Total Charge: [currency][amount]
 Expected Delivery: [date]
 Total Weight: [weight] [unit]</description>
         <developerName>instructions_4</developerName>
